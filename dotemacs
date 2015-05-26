@@ -17,13 +17,13 @@
   :foreground "white" :font "Courier" :height 130)
 
 ;; highlight after 80 lines
-
 (require 'whitespace)
 (setq whitespace-line-column 80) ;; limit line length
 (setq whitespace-style '(face lines-tail))
-
 (add-hook 'prog-mode-hook 'whitespace-mode)
 
-;; make terminal show unicode
-
+;; make terminal show unicodexs
 (set-terminal-coding-system 'utf-8-unix)
+
+;; set default font- the value is in 1/10pt, so 100 will give you 10pt, etc. 
+(set-face-attribute 'default nil :height 140)
