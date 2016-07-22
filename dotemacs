@@ -35,9 +35,6 @@
 ;; make startup not show default two screens
 (setq inhibit-startup-screen t)
 
-;; make tabbing 4 spaces for python
-(add-hook 'python-mode-hook
-      (lambda ()
-        (setq indent-tabs-mode t)
-        (setq tab-width 4)
-        (setq python-indent 4)))
+;; make tabbing 4 spaces by default
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
