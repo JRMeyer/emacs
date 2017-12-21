@@ -38,3 +38,8 @@
 ;; make tabbing 4 spaces by default
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+
+;; Adding modern C++ highlighting (in /lib/ dir)
+(add-to-list 'load-path "lib/modern-cpp")
+(require 'modern-cpp-font-lock)
+(modern-c++-font-lock-global-mode t)
